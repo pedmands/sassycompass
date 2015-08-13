@@ -1,0 +1,53 @@
+// !Susy Setup ----------
+$total-columns: 12;
+$column-width: 4em;
+$gutter-width: 1em;
+$grid-padding: $gutter-width;
+@include border-box-sizing;
+
+$small: 30em;
+$medium: 47em;
+$large: 75em;
+
+// !Layout ----------
+.layout {
+	padding: 3%;
+}
+
+// !Header ----------
+header {
+	img {
+		width: 95%;
+		max-width: 500px;
+		margin: 2.5%;
+		margin-bottom: 0;
+	} //img
+} //header
+
+// !Navigation ----------
+.navigation {
+	background: lighten($darkblue, 15);
+	ul.nav {
+		li {
+			i {
+				color: lighten($yellow, 20);
+				padding-right: .5em;
+			} //i
+			a {
+				display: block;
+				text-decoration: none;
+				padding: 5px 10px;
+				color: $paleryellow;
+			} //a
+		} //li
+	} //ul.nav
+} //navigation
+
+// !Footer ----------
+footer {
+	color: $paleyellow;
+	background: lighten($darkblue, 3);
+	margin-top: 20px;
+	padding-top: 20px;
+	padding-bottom: 100px;
+}
